@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header Section with required IDs and Classes -->
+    <header id="header">
+      <div class="logo">
+        <img
+          src="https://api.logo.com/api/v2/images?logo=lg_jGPH52pG1NrbM8kWLb&format=webp&width=2000&background=transparent&fit=contain&quality=100&u=2024-11-08T11%3A36%3A43.206Z"
+          alt="Product Logo"
+          id="header-img"
+        />
+      </div>
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#product" class="nav-link">Product</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1>Your Product Name</h1>
+      <p>Your tagline or a brief description goes here.</p>
+      <button class="button-48" role="button">
+        <span class="text">Get Started</span>
+      </button>
+    </section>
+
+    <!-- Video Section with required ID -->
+    <section id="product">
+      <h2>About the Product</h2>
+      <p>Details about the product, its uses, and why it's beneficial.</p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/rtOvBOTyX00?si=2qtBl-VBxvFSWlYE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <h2>Features</h2>
+      <div class="feature">
+        <h3>Feature 1</h3>
+        <p>Brief description of the feature.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Feature 2</h3>
+        <p>Brief description of the feature.</p>
+      </div>
+    </section>
+
+    <!-- Form Section with required IDs -->
+    <section id="signup">
+      <h2>Sign Up for Updates</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email" name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+      <div class="pricing-header">
+        <h2>Choose Your Plan</h2>
+        <p>Find the perfect plan for your needs</p>
+      </div>
+      <div class="grid-container">
+        <div class="plan">
+          <h3>Basic Plan</h3>
+          <p class="price">$4.99</p>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+            <li>Additional Feature</li>
+          </ul>
+          <button>Buy</button>
+        </div>
+
+        <div class="plan featured">
+          <h3>Pro Plan</h3>
+          <p class="price">$19.99</p>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+            <li>Additional Feature</li>
+          </ul>
+          <button>Buy</button>
+        </div>
+        <div class="plan">
+          <h3>Premium Plan</h3>
+          <p class="price">$49.99</p>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+            <li>Additional Feature</li>
+          </ul>
+          <button>Buy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>Contact us at <span class="link">tanverulislam8@gmail.com</span></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,345 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  background-image: linear-gradient(to bottom right, #ffebb2 40%, #e9a89b 60%);
+}
+
+iframe {
+  border: 1px solid transparent;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h2 {
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+
+#email {
+  width: 150px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#submit {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 0.5em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 0.9em 1.5em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  background-color: #EBEBEB;
+}
+.button-48 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+
+.nav-link {
+  color: #1f2544;
+  background-color: #fff6e08f;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.nav-link:hover {
+  color: #fff6f6;
+  background-color: #1f2544;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+
+
+#hero {
+  background: url("https://wallpapers.com/images/featured/pastel-aesthetic-pictures-7m6fad3x90p3x6nz.jpg")
+    center/cover no-repeat;
+  margin: 0;
+  padding: 220px 0 100px;
+  text-shadow: 1px 1px 3px black;
+  text-align: center;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+
+
+#header-img {
+  width: 150px;
+  height: 70px;
+}
+
+#features,
+#product,
+#signup,
+#pricing,
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* plans area */
+
+/* Header styling */
+.pricing-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pricing-header h1 {
+  font-size: 2em;
+  color: #333;
+  margin: 0;
+}
+
+.pricing-header p {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Existing grid container and plan styling */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  gap: 20px; /* Spacing between plans */
+  max-width: 1000px; /* Container width */
+  padding: 20px;
+  margin: auto;
+}
+
+.plan {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan h2 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  color: #333;
+}
+
+.plan .price {
+  font-size: 1.8em;
+  color: #2d9cdb;
+  margin: 0.5em 0;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan ul li {
+  padding: 8px 0;
+  color: #666;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.plan button {
+  background-color: #2d9cdb;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plan.featured {
+  background-color: #2d9cdb;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.plan.featured h2,
+.plan.featured .price,
+.plan.featured ul li,
+.plan.featured button {
+  color: #fff;
+}
+
+.plan.featured button {
+  background-color: #fff;
+  color: #2d9cdb;
+}
+
+.plan button:hover {
+  background-color: #fff;
+  color: #2d9cdb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.plan.featured button:hover {
+  background-color: #2d9cdb;
+  color: #fff;
+}
+
+.link {
+  font-weight: 500;
+}
+
+.link:hover {
+  background-color: #387F39;
+  color: #e0e0e0;
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+  .grid-container {
+     grid-template-columns: 1fr; /* Stack the plans vertically */
+     gap: 15px; /* Adjust spacing between plans */
+     padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .plan {
+     padding: 15px; /* Smaller padding on each plan */
+  }
+
+  .plan h2 {
+     font-size: 1.3em; /* Smaller heading size */
+  }
+
+  .plan .price {
+     font-size: 1.5em; /* Smaller price size */
+  }
+
+  .plan button {
+     padding: 8px 15px; /* Smaller button padding */
+     font-size: 0.9em; /* Smaller button font size */
+  }
+
+  .nav-link {
+    display: block;
+    margin: 5px;
+    font-size: small;
+  }
+
+  #header-img {
+    width: 100px;
+    height: 50px;
+  }
+
+
+  body {
+    font-size: 0.9em;
+  }
+}
